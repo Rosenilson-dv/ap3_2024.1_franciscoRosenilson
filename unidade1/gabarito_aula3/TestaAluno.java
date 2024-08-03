@@ -1,8 +1,8 @@
-
+package gabarito_aula3;
 
 public class TestaAluno {
     public static void main(String[] args) {
-        
+
         Aluno rosenilson = new Aluno();
         rosenilson.setNome("Francisco Rosenilson");
         rosenilson.setNota1(10);
@@ -14,6 +14,6 @@ public class TestaAluno {
         if (rosenilson.aprovadoMedia())
             System.out.println("Passou por media");
         else
-            System.out.println("Se fudeu, tirou " + rosenilson.getMedia());    
+            System.out.println("Se fudeu, tirou " + rosenilson.getMedia());
     }
 }

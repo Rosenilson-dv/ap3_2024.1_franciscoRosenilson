@@ -1,36 +1,17 @@
-
+package gabarito_aula4;
 
 public class Aluno {
 
+    
     String nome;
     double nota1 = 5.0;
     double nota2 = -1;
     double nota3 = -1;
     String nomeDaMae = "Maezinha";
     boolean aprovadoMedia = false;
-
-    public String getNomeMaisculo() {
-        return nome.toUpperCase();
-    }
-
-    public String getNomeMinusculo() {
-        return nome.toLowerCase();
-    }
-
-    public double getMedia() {
-        return (nota1 + nota2 +nota3) / 3;
-    }
-
-    public boolean aprovadoMedia() {
-        if (getMedia() >= 7)
-            return true;
-        return false;    
-    }
-    
-    public String getnome() {
+    public String getNome() {
         return nome;
     }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -52,9 +33,23 @@ public class Aluno {
     public void setNota3(double nota3) {
         this.nota3 = nota3;
     }
+    public String getNomeDaMae() {
+        return nomeDaMae;
+    }
+    public void setNomeDaMae(String nomeDaMae) {
+        this.nomeDaMae = nomeDaMae;
+    }
+    public boolean isAprovadoMedia() {
+        return aprovadoMedia;
+    }
+    public void setAprovadoMedia(boolean aprovadoMedia) {
+        this.aprovadoMedia = aprovadoMedia;
+    }
+    
     @Override
     public String toString() {
-        return "Aluno [nome=" + nome + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + "]";
-
+        return "Aluno [nome=" + nome + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nomeDaMae="
+                + nomeDaMae + ", aprovadoMedia=" + aprovadoMedia + "]";
     }
+    
 }

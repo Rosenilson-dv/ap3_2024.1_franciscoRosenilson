@@ -12,7 +12,7 @@
  * @since 2024-07-24
  */
 
-package ap3_franciscoRosenilson.unidade1.gabarito_aula2.br.com.rosenilson.aula2;
+package gabarito_aula2.br.com.rosenilson.aula2;
 
 public class TiposPrimitivos {
  public static void main(String[] args) {

@@ -1,4 +1,4 @@
-
+package gabarito_aula3;
 
 public class MediaProgEstruturada {
 
