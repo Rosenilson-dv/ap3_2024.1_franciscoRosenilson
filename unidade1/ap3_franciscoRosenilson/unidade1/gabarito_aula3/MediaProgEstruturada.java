@@ -1,4 +1,4 @@
-package ap3_franciscoRosenilson.unidade1.gabarito_aula3;
+
 
 public class MediaProgEstruturada {
 

@@ -1,4 +1,4 @@
-package ap3_franciscoRosenilson.unidade1.gabarito_aula4;
+
 
 public class Aluno {
 
@@ -8,7 +8,7 @@ public class Aluno {
     double nota3 = -1;
     String nomeDaMae = "Maezinha";
     boolean aprovadoMedia = false;
-    
+
     public String getNomeMaisculo() {
         return nome.toUpperCase();
     }
