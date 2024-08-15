@@ -33,19 +33,19 @@ public class Questao1 {
 
   distancia = Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
 
-  System.out.println("A distância é:" + distancia );
+  System.out.println("A distância é: " + distancia );
   System.out.println();
     return distancia;
   }
 
   public double getAmplitude() {
 
-    double val1 = 0.0;
+    double val1 = 9.0;
     double val2 = 2.0;
     double val3 = -3.9;
 
     double amplitude = val1 - val2;
-    System.out.println("A amplitude é" + (amplitude - val3));
+    System.out.println("A amplitude é: " + (amplitude - val3));
     return amplitude;
 }
 
