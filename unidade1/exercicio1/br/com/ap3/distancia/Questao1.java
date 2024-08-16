@@ -8,7 +8,7 @@
  * @author franciscoRosenilson
  * @version 1.0
  * @since 2024-08-14
- */
+ **/
 
 package br.com.ap3.distancia;
 

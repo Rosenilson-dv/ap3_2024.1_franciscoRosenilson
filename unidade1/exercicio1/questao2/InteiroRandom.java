@@ -3,12 +3,12 @@
  * 
  * @Questão_2 Um menor inteiro positivo de uma lista ligada gerado aleatoriamente.
  * 
- * Este programa demonstra um metódo main utilizando uma lista ligada e o Random para gerar um inteiro positivo aleatório e exibindo para o usuário o resultado.
+ * Este programa demonstra em um metódo main utilizando uma lista ligada e o Random para gerar um inteiro positivo aleatório e exibindo para o usuário o resultado.
  * 
  * @author franciscoRosenilson
  * @version 1.0
  * @since 2024-08-15
- */
+ **/
 
 package questao2;
 import java.util.LinkedList;
