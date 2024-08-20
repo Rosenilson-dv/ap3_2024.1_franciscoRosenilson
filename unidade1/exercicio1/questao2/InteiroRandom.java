@@ -17,7 +17,7 @@ import java.util.Random;
 public class InteiroRandom {
     public static void main(String[] args) {
         
-        LinkedList<Integer> listaInteiros = new LinkedList<>();
+        LinkedList<Integer> listaInteiros = new LinkedList<Integer>();
        
         Random random = new Random();
         
