@@ -11,6 +11,7 @@
  **/
 
 package questao2;
+
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -20,19 +21,19 @@ public class InteiroRandom {
         LinkedList<Integer> listaInteiros = new LinkedList<Integer>();
        
         Random random = new Random();
-        
-        for (int i = 0; i < 9999; i++){
+
+        for (int i = 0; i < 9999; i++) {
             listaInteiros.add(random.nextInt(Integer.MAX_VALUE));
         }
-        
+
         int menorInteiro = Integer.MAX_VALUE;
-        
-        for (int numero : listaInteiros){
-            if (numero < menorInteiro){
+
+        for (int numero : listaInteiros) {
+            if (numero < menorInteiro) {
                 menorInteiro = numero;
             }
-        }     
-        
+        }
+
         System.out.println("O menor inteiro positivo da lista é: " + menorInteiro);
     }
 }
