@@ -1,35 +1,33 @@
 package centro_convencoes;
 
 import java.util.List;
+import java.util.ArrayList;
+import java.time.LocalDateTime;
 
 public class CentroConvecoes {
-    public class Reserva {
-
-        protected List<Reserva> reservas;
-        protected List<Auditorio> auditorios;
+    private List<Auditorio> auditorios;
+    
+    public void fazeReserva() {
+        for (Auditorio auditorioAtual : auditorios){
+            System.out.println(auditorioAtual);
+        }
+    }
+    
+    public CentroConvecoes(int capacidadeCentro , int capacidadePorSala) {
+        this.auditorios = new ArrayList<>();
         
-        public Reserva(List<Reserva> reservas, List<Auditorio> auditorios) {
-            this.reservas = reservas;
-            this.auditorios = auditorios;
+        for (int i = 0; i < capacidadeCentro; i++) {
+            auditorios.add(new Auditorio(i, capacidadePorSala));
         }
 
-        public List<Reserva> getReservas() {
-            return reservas;
-        }
-        public void setReservas(List<Reserva> reservas) {
-            this.reservas = reservas;
-        }
-        public List<Auditorio> getAuditorios() {
-            return auditorios;
-        }
-        public void setAuditorios(List<Auditorio> auditorios) {
-            this.auditorios = auditorios;
-        }
+    }
 
-        @Override
-        public String toString() {
-            return "Reserva [reservas=" + reservas + ", auditorios=" + auditorios + ", getReservas()=" + getReservas()
-                    + ", getAuditorios()=" + getAuditorios() + "]";
+    public void ReservarAuditorio (int numeroSala, LocalDateTime data) {
+        for (Auditorio auditorioAtual : auditorios) {
+            if (auditorioAtual.getNumeroSala() == numeroSala) {
+                auditorioAtual.isOcupado();
+                auditorioAtual.setDataReserva(data);
+            }
         }
-    }     
+    }
 }
