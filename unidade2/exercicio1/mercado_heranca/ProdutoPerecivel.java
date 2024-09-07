@@ -2,7 +2,8 @@ import java.time.LocalDateTime;
 
 public class ProdutoPerecivel extends Produto {
 
-    private LocalDateTime validade;
+	
+	private LocalDateTime validade;
 
 	public ProdutoPerecivel(String nome, int quantidade, LocalDateTime validade) {
 		super(nome, quantidade);
@@ -19,7 +20,7 @@ public class ProdutoPerecivel extends Produto {
 
 	@Override
 	public String toString() {
-		return "ProdutoPerecivel [validade=" + validade + "]";
+		return "ProdutoPerecivel [validade=" + validade + ", toString()=" + super.toString() + "]";
 	}
-    
+
 }
