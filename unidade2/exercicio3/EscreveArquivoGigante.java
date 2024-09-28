@@ -17,7 +17,7 @@ public class EscreveArquivoGigante {
 
         try {
             BufferedWriter arquivoCSV = new BufferedWriter(new FileWriter(nomeDoArquivo, append));
-            for (int controle = 1; controle <= 5000; controle++) {
+            for (int controle = 1; controle <= 8987411; controle++) {
                 long idFuncionario = controle;
                 String umNome = nomes[random.nextInt(nomes.length)];
                 String umDepartamento = departamento[random.nextInt(departamento.length)];

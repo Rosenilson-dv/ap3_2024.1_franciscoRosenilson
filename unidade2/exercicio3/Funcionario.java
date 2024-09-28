@@ -23,7 +23,7 @@ public class Funcionario {
         NumberFormat formatador = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
 
 
-        return idFuncionario + ";" + nome + ";" + departamento + ";" + formatador.format(salario) + "]";
+        return idFuncionario + ";" + nome + ";" + departamento + ";" + formatador.format(salario);
     }
 
 }
